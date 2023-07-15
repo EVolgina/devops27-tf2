@@ -17,7 +17,7 @@
 - скриншот ЛК Yandex Cloud с созданной ВМ,
 - скриншот успешного подключения к консоли ВМ через ssh,
 - ответы на вопросы.
-![main]()
+![main](https://github.com/EVolgina/devops27-tf2/blob/main/main.PNG)
 ```
   vagrant@sysadm-fs:~/tf/ter-homeworks/02/src$ sudo terraform apply
 data.yandex_compute_image.ubuntu: Reading...

@@ -144,7 +144,7 @@ yandex_compute_instance.platform_db: Still creating... [20s elapsed]
 yandex_compute_instance.platform_db: Still creating... [30s elapsed]
 yandex_compute_instance.platform_db: Creation complete after 39s [id=fhm0apb5jncts5vt60jk]
 ```
-![vm2]()
+![vm2](https://github.com/EVolgina/devops27-tf2/blob/main/2vm.PNG)
 # Задание 4
 - Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
 - Примените изменения.

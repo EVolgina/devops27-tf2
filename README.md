@@ -132,6 +132,19 @@ Terraform has compared your real infrastructure against your configuration and f
 - Скопируйте блок ресурса и создайте с его помощью вторую ВМ(в файле main.tf): "netology-develop-platform-db" , cores = 2, memory = 2, core_fraction = 20. Объявите ее переменные с префиксом vm_db_ в том же файле('vms_platform.tf').
 - Примените изменения.
 #### Ответ:
+```
+Plan: 1 to add, 0 to change, 0 to destroy.
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+  Enter a value: yes
+yandex_compute_instance.platform_db: Creating...
+yandex_compute_instance.platform_db: Still creating... [10s elapsed]
+yandex_compute_instance.platform_db: Still creating... [20s elapsed]
+yandex_compute_instance.platform_db: Still creating... [30s elapsed]
+yandex_compute_instance.platform_db: Creation complete after 39s [id=fhm0apb5jncts5vt60jk]
+```
+![vm2]()
 # Задание 4
 - Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
 - Примените изменения.

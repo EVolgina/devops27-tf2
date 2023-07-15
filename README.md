@@ -19,7 +19,7 @@
 - ответы на вопросы.
 ![main](https://github.com/EVolgina/devops27-tf2/blob/main/main.PNG)
 ```
-  vagrant@sysadm-fs:~/tf/ter-homeworks/02/src$ sudo terraform apply
+~/tf/ter-homeworks/02/src$ sudo terraform apply
 data.yandex_compute_image.ubuntu: Reading...
 yandex_vpc_network.develop: Refreshing state... [id=enp2ajs7g3foubrskual]
 data.yandex_compute_image.ubuntu: Read complete after 4s [id=fd85f37uh98ldl1omk30]
@@ -101,7 +101,7 @@ yandex_compute_instance.platform: Still creating... [40s elapsed]
 yandex_compute_instance.platform: Creation complete after 44s [id=fhm02988ffpqs1u3kv2q]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
-![yc]()
+![yc](https://github.com/EVolgina/devops27-tf2/blob/main/yo.PNG)
 #### Ответ:
 - ошибки в том что в файле main.tf было указано одно ядро, для разворачивания ВМ на Yandex Cloud минимальное количество ядер для ВМ 2
 - Если необходимо определеить является ли данная ВМ прерываемой или нет, то должны быть строчки: preemptible = true
@@ -113,8 +113,18 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. Заполните их default прежними значениями из main.tf.
 Проверьте terraform plan (изменений быть не должно).
 #### Ответ:
+![mainchage]()
 ```
+~/ter-homeworks/02/src$ sudo terraform plan
+data.yandex_compute_image.ubuntu: Reading...
+yandex_vpc_network.develop: Refreshing state... [id=enpepgsfit9fesk765ae]
+data.yandex_compute_image.ubuntu: Read complete after 6s [id=fd85f37uh98ldl1omk30]
+yandex_vpc_subnet.develop: Refreshing state... [id=e9b4gpqitaprrioqsm8k]
+yandex_compute_instance.platform: Refreshing state... [id=fhmq8ksccostg9p7hqgq]
 
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
 ``` 
 # Задание 3
 - Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.

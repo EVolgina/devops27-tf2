@@ -113,7 +113,8 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. Заполните их default прежними значениями из main.tf.
 Проверьте terraform plan (изменений быть не должно).
 #### Ответ:
-![mainchage]()
+![mainchage](https://github.com/EVolgina/devops27-tf2/blob/main/changemain.PNG)
+
 ```
 ~/ter-homeworks/02/src$ sudo terraform plan
 data.yandex_compute_image.ubuntu: Reading...

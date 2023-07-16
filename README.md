@@ -150,11 +150,37 @@ yandex_compute_instance.platform_db: Creation complete after 39s [id=fhm0apb5jnc
 - Примените изменения.
 - В качестве решения приложите вывод значений ip-адресов команды terraform output
 #### Ответ:
+```
+Changes to Outputs:
+  + instance_ips = {
+      + netology-develop-platform-db  = "51.250.72.47"
+      + netology-develop-platform-web = "62.84.112.226"
+    }
+
+You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+instance_ips = {
+  "netology-develop-platform-db" = "51.250.72.47"
+  "netology-develop-platform-web" = "62.84.112.226"
+}
+```
 # Задание 5
 - В файле locals.tf опишите в одном local-блоке имя каждой ВМ, используйте интерполяцию ${..} с несколькими переменными по примеру из лекции.
 - Замените переменные с именами ВМ из файла variables.tf на созданные вами local переменные.
 - Примените изменения.
 #### Ответ:
+
 # Задание 6
 - Вместо использования 3-х переменных ".._cores",".._memory",".._core_fraction" в блоке resources {...}, объедените их в переменные типа map с именами "vm_web_resources" и "vm_db_resources". В качестве продвинутой практики попробуйте создать одну map переменную vms_resources и уже внутри нее конфиги обеих ВМ(вложенный map).
 - Так же поступите с блоком metadata {serial-port-enable, ssh-keys}, эта переменная должна быть общая для всех ваших ВМ.

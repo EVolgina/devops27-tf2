@@ -18,6 +18,7 @@
 - скриншот успешного подключения к консоли ВМ через ssh,
 - ответы на вопросы.
 ![main](https://github.com/EVolgina/devops27-tf2/blob/main/main.PNG)
+![ssh](https://github.com/EVolgina/devops27-tf2/blob/main/ssh.PNG)
 ```
 ~/tf/ter-homeworks/02/src$ sudo terraform apply
 data.yandex_compute_image.ubuntu: Reading...

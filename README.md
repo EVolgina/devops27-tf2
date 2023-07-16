@@ -281,4 +281,4 @@ resource "yandex_compute_instance" "platform_db" {
   })
 }
 ```
-![tfplan]()
+![tfplan](https://github.com/EVolgina/devops27-tf2/blob/main/zad6.PNG)
